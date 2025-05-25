@@ -1,0 +1,385 @@
+.shop-cart-sec{
+    background: #FFFEFA;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+
+.shop-cart-container{
+    max-width: 1310px;
+    margin: auto;
+    width: 100%;
+}
+
+
+.cart-sec-left{
+    position: relative;
+    padding: 45px 0 139px 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.cart-sec-left::before{
+    width: 150%;
+    background: rgba(227, 237, 230, 0.96);
+    height: 100%;
+    position: absolute;
+    content: '';
+    left: -300px;
+    top: 0;
+    z-index: -1;
+}
+
+
+.cart-sec-left::after{
+    width: 100%;
+    background: url(../images/sun-watermark-logo.png);
+    height: 500px;
+    max-width: 500px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    content: '';
+    left: -70%;
+    top: 18%;
+    z-index: 2;
+}
+
+
+.cart-sec-left .cart-details{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-radius: 20px 0px;
+    border: 1px solid rgba(128, 117, 92, 0.40);
+    background: rgba(255, 255, 255, 0.90);
+    margin-bottom: 19px;
+    position: relative;
+	align-items: center;
+
+}
+
+.cart-sec-left .cart-details:last-child{
+    margin-bottom: 0;
+}
+
+.cart-sec-left .cart-details img{
+    max-width: 106px;
+      width: 100% !important;
+    height: 106px !important;
+    border-radius: 14px 0px 0px 0px;
+    border: 1px solid rgba(128, 117, 92, 0.50);
+
+    margin: 16px;
+}
+
+
+
+.cart-sec-left .cart-details .cart-details-txt h4{
+    color: #970349;
+    font-family: "Playfair Display";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 1.04px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.variation dd p {
+    margin-bottom: 0px !important;
+}
+.cart-sec-left .cart-details .cart-details-txt p{
+    color: #2A312D;
+    font-family: "Playfair Display";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    margin-bottom: 0px;
+}
+
+
+
+.cart-sec-left .cart-details a.cart-remove-btn{
+    color: rgba(151, 3, 73, 0.96);
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    text-decoration: underline !important;
+    padding: 19px 25px;
+}
+
+.cart-details-amount{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cart-sec-left h2{
+    color: #2A312D;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    border-left: 3px solid #F57812CC;
+    padding-left: 18px;
+    margin: 45px 0 40px 0;
+}
+
+.cart-sec-right {
+    position: relative;
+    z-index: 2;
+    background: #FFFEFA;
+    height: 100%;
+    padding: 122px 0 0 87px;
+    width: 100%;
+}
+
+.cart-sec-right h2{
+    color: #131D3A;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; 
+    letter-spacing: 0.64px;
+    border-left: 3px solid #F57812CC;
+    padding-left: 18px;
+    margin-bottom: 32px;
+}
+
+.cart-sec-right .table{
+    background: unset;
+    --bs-table-bg:unset;
+}
+
+.cart-sec-right .table>:not(caption)>*>*{
+    padding: 30px 0 !important;
+
+}
+
+.cart-sec-right tbody, td, tfoot, th, thead, tr{
+    border-bottom: 1px solid #D9D9D9!important;
+}
+
+.cart-sec-right tbody, td, tfoot, th, thead, tr:nth-last-child(1){
+    border:0 !important;
+}
+
+.cart-sec-right tbody tr td{
+    color: #131D3A;
+    font-family: "Red Hat Text" !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+.cart-sec-right tr td:nth-last-of-type(1){
+    text-align: right;
+}
+
+.cart-sec-right tbody tr td.total-amount{
+    color: #970349;
+    font-weight: 600;
+}
+
+.cart-sec-right a.shop-detail-btn{
+    border-radius: 10px;
+    background: #047422;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #FFF;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.cart-sec-right a.shop-detail-btn span{
+    padding-left: 12px;
+}
+
+
+.cart-sec-right a.shop-detail-btn:hover {
+    border: 1px solid #047422;
+    background: transparent;
+    color: #047422;
+}
+
+.cart-sec-right a.shop-detail-btn:hover svg path{
+    stroke: #047422 !important;
+}
+ .cart-sec-left a.shop-back-btn{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    color: rgba(6, 143, 43, 0.96);
+    font-family: "Red Hat Text";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    transition: all 0.5s ease;
+}
+
+
+
+.shop-detail-left-sec a.shop-back-btn:hover, .cart-sec-left a.shop-back-btn:hover{
+    color: #000;
+}
+
+/* Use flexbox to style the definition list within the variation box */
+.variation dt,
+.variation dd {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-left: 0px;
+}
+
+
+
+/* Fixed width for dt */
+.variation dt {
+      flex: 0 0 10px;
+   
+    color: #970349;
+    font-weight: bold;
+}
+
+/* dd takes the remaining space */
+.variation dd {
+    flex: 1;
+}
+
+/* Ensure the dd p element does not have extra margin */
+.variation dd p {
+    margin: 0;
+}
+.qty-input-box input {
+    border-width: 0px;
+    border-color: white;
+    background-color: transparent;
+    width: 35%;
+    margin: 0px 10px;
+    padding-left: 5px;
+    outline: unset !important;
+    color: #82765C;
+    text-align: center;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.36px;
+}
+.qty-input-box i {
+    color: #80755C;
+    cursor: pointer;
+}
+#qty_selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qty-input-box {
+    max-width: 146px;
+    width: 100%;
+    height: 40px;
+    border-radius: 120px;
+    border: 1px solid #80755C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+.variation dd p {
+    margin-bottom: 0px !important;
+}
+table.shop_table.shop_table_responsive.cart.woocommerce-cart-form__contents {
+    border: none !important;
+}
+.quantity input {
+    max-width: 146px;
+    width: 100%;
+    height: 40px;
+    border-radius: 120px;
+    border: 1px solid #80755C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+tr.cart-details-2 {
+    gap: 15px;
+    border-radius: 20px 0px;
+    border: 1px solid rgba(128, 117, 92, 0.40) !important;
+    background: rgba(255, 255, 255, 0.90);
+    margin-bottom: 19px;
+    position: relative;
+    align-items: center;
+}
+input#coupon_code {
+    width: 200px;
+    border-radius: 20px 0px;
+}
+.cart-details-2 .shop-detail-btn {
+    border-radius: 10px !important;
+    background: #047422 !important;
+ 
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    color: #FFE !important;
+    font-family: "Red Hat Text";
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 17px !important;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+section.shipping-calculator-form button {
+    border-radius: 10px !important;
+    background: #047422 !important;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    color: #FFE !important;
+    font-family: "Red Hat Text";
+    font-size: 13px !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    line-height: 17px !important;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+@media only screen and (max-width: 600px) {
+.cart-sec-left::before{
+    left: -177px;
+}
+input#coupon_code {
+    width: 145px;
+   
+}
+
+.quantity input{
+    width: 100%;
+    display: inline;
+}
+}

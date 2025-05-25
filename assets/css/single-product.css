@@ -1,0 +1,742 @@
+.shop-detail-sec{
+    width: 100%;
+    overflow: hidden;
+    background: #FFF;
+}
+
+.shop-detail-container{
+    max-width: 1310px;
+    width: 100%;
+    margin: auto;
+}
+
+.shop-detail-left-sec{
+    display: flex;
+    position: relative;
+    padding: 104px 0 140px 0;
+    z-index: 2;
+}
+
+.shop-detail-left-sec a.shop-back-btn{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    color: rgba(6, 143, 43, 0.96);
+    font-family: "Red Hat Text";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    transition: all 0.5s ease;
+}
+
+.shop-detail-left-sec a.shop-back-btn:hover{
+    color: #000;
+}
+
+.shop-detail-left-sec::before{
+    width: 150%;
+    background: url(../img/shop/detail-bg.png);
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: absolute;
+    content: '';
+    left: -300px;
+    top: 0;
+    z-index: -1;
+}
+
+.shop-detail-left-sec .image-gallery {
+    height: auto;
+    overflow-y: auto;
+    scrollbar-width: auto;
+    scrollbar-width: thin;
+    scrollbar-width: none;
+  }
+  
+  .shop-detail-left-sec .thumbnails {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+  }
+
+  .mian-thumbnail-box{
+    max-width: 554px;
+    height: auto;
+    width: 100%;
+    border-radius: 70px 0px;
+    border: 1px solid rgba(128, 117, 92, 0.50);
+    padding: 12px;
+    background: #FDF4F8;
+  }
+  
+  .shop-detail-left-sec .mian-thumbnail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 62px 0px;
+  }
+  
+  .shop-detail-left-sec .thumbnail{
+    max-width: 100px;
+    width: 100%;
+    height: 117px;
+    padding: 6px;
+    border-radius: 20px 0px;
+    border: 1px solid rgba(128, 117, 92, 0.40);
+    display: block;
+  }
+  
+  .shop-detail-left-sec .thumbnail-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 16px 0px;
+    
+  }
+
+  .shop-detail-right-sec{
+    position: relative;
+    z-index: 2;
+  }
+
+  .shop-detail-right-sec h1{
+    color: #970349;
+    font-family: "Playfair Display";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 1.68px;
+  }
+
+  .shop-detail-right-sec h1 span{
+    color: #970349;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.28px;
+  }
+
+  .shop-detail-right-sec h2{
+    color: #131D3A;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    margin: 21px 0;
+  }
+
+  .shop-detail-right-sec p, .shop-detail-right-sec p .more-text{
+    color: #2A312D;
+    font-family: "Red Hat Text";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.64px;
+  }
+
+  .shop-detail-right-sec p span{
+    color: #000;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+  .shop-detail-right-sec .stars{
+    margin-bottom: 32px;
+  }
+
+  .shop-detail-right-sec h4{
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+  }
+
+  .shop-detail-right-sec .size-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 14px 0 39px 0;
+   
+  }  
+
+  .shop-detail-right-sec .size-box a{
+    width: 50px;
+    height: 50px;
+    border-radius: 120px;
+    border: 1px solid #EBD1DD;
+    background: #F4E5EC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(19, 29, 58, 0.70);
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    letter-spacing: 0.56px;
+  }
+
+  .shop-detail-right-sec .qty-box h6{
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    letter-spacing: 0.48px;
+  }
+
+
+
+  #qty_selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qty-input-box{
+    max-width: 146px;
+    width: 100%;
+    height: 40px;
+    border-radius: 120px;
+    border: 1px solid #80755C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+  }
+  
+  #qty_display {
+      border-width: 0px;
+      border-color: white;
+      background-color:transparent;
+      width: 35%;
+      margin:0px 10px;
+      padding-left: 5px;
+      outline: unset !important;
+      color: #82765C;
+     text-align: center;
+        font-family: "Red Hat Text";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; 
+        letter-spacing: 0.36px;
+  }
+    
+ .qty-input-box i{
+    color: #80755C;
+    cursor: pointer;
+ } 
+  
+.shop-detail-right-sec a.shop-detail-btn{
+    border-radius: 10px;
+    background: #047422;
+    max-width: 416px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; 
+    gap: 14px;
+    text-transform: uppercase;
+    margin-top: 52px;
+    transition: all 0.5s ease;
+}
+
+.shop-detail-right-sec a.shop-detail-btn span svg{
+    vertical-align: unset ;
+}
+
+.shop-detail-right-sec a.shop-detail-btn:hover{
+    border: 1px solid #047422;
+    background: transparent;
+    color: #047422;
+}
+
+.shop-detail-right-sec a.shop-detail-btn:hover svg path{
+    fill: #047422;
+}
+
+.size-box a.selected {
+    background-color: #047422;
+    color: #fff;
+}
+
+
+.shop-detail-tabs{
+    background: #FFDCC0;
+    width: 100%;
+    padding: 64px 0 110px 0;
+}
+
+.shop-tabs-container{
+    max-width: 1310px;
+    margin: auto;
+    width: 100%;
+}
+
+.shop-tab-info .nav-tabs{
+    border-bottom: 0 !important;
+    margin-bottom: 34px;
+    display: flex;
+    gap: 38px;
+}
+
+.shop-tab-info .nav-tabs .nav-link:focus, .shop-tab-info .nav-tabs .nav-link:hover{
+    border-color: unset;
+}
+
+.shop-tab-info .nav-tabs .nav-item.show .nav-link, .shop-tab-info .nav-tabs .nav-link.active{
+    background-color:unset;
+    border-color: unset;
+    border: unset;
+    color: #068F2BF5;
+    font-weight: 700;
+    padding: 0;
+}
+
+.shop-tab-info .nav-tabs .nav-link{
+    background-color:unset;
+    border-color: unset;
+    border: unset;
+    color: #4D4638;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+    padding: 0;
+}
+
+.shop-tab-info .tab-content{
+    border-radius: 14px;
+    background: #FFF;
+    padding: 51px 73px 43px 59px;
+}
+
+.shop-tab-info .tab-content h4{
+    color: #131D3A;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; 
+    letter-spacing: 0.64px;
+    border-left: 3px solid #F57812CC;
+    padding-left: 11px;
+    margin-bottom: 11px;
+}
+
+.shop-tab-info .tab-content p{
+    color: rgba(19, 29, 58, 0.80);
+    font-family: Sarabun;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    letter-spacing: 0.16px;
+}
+
+
+.shop-detail-slide{
+    background: #FFFEFA;
+    padding: 103px 0 20px 0;
+}
+
+.shop-slider-container{
+    max-width: 1310px;
+    margin: auto;
+    width: 100%;
+}
+
+
+    
+.shop-detail-slider {
+    position: relative;
+}
+
+.shop-detail-slider .owl-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.shop-detail-slider .owl-nav .owl-prev,
+.shop-detail-slider .owl-nav .owl-next
+{
+    position: relative;
+    z-index: 1;
+}
+
+.shop-detail-slider .owl-nav .owl-prev {
+    left: 30px;
+}
+
+.shop-detail-slider .owl-nav .owl-next{
+    right: 30px;
+}
+
+
+.shop-detail-slider .owl-theme .owl-nav [class*=owl-]{
+    border-radius: 50px !important;
+    background-color: transparent !important;
+}
+
+.shop-detail-slider.owl-theme .owl-nav [class*=owl-]:hover{
+    background: unset;
+    color: unset;
+}
+
+.shop-slider-container h3{
+    color: #131D3A;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.64px;
+    border-left: 3px solid #F57812CC;
+    padding-left: 11px;
+    margin-bottom: 46px;
+}
+
+.shop-detail-slider .category-box .category-img{
+    padding: 11px !important;
+}
+
+.shop-detail-slider .category-box .category-img{
+    max-width: unset;
+}
+
+
+@media (min-width:320px) and (max-width:991px){
+    .shop-detail-right-sec{
+         padding: 30px 0;
+    }
+
+    .shop-detail-tabs{
+        padding: 30px 0;
+    }
+
+
+    .shop-tab-info .nav-tabs{
+        gap:20px;
+    }
+    .shop-detail-slide{
+        padding: 30px 0 230px 0;
+    }
+}
+
+
+@media (min-width:320px) and (max-width:668px){
+    .shop-detail-left-sec::before{
+        left: -20px;
+      
+    }
+
+    .shop-detail-left-sec{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .shop-detail-left-sec .image-gallery{
+        max-width: 596px;
+        width: 100%;
+        overflow-x: auto;
+        height: auto;
+
+    }
+
+    .shop-detail-left-sec .thumbnails{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .shop-tab-info .tab-content{
+        padding: 20px;
+    }
+
+    .trophy-passion-donate.shop-donate{
+        padding: 130px 0 !important;
+    }
+
+    .shop-donate .donate-btn-group{
+        gap: 0;
+    }
+
+    .shop-detail-right-sec a.shop-detail-btn{
+        margin-top: 20px;
+    }
+    .shop-detail-right-sec .size-box{
+        margin: 14px 0 20px 0;
+    }
+
+    .shop-detail-left-sec{
+        padding: 45px 0 30px 0;
+    }
+
+    .shop-detail-right-sec h2{
+        font-size: 28px;
+    }
+
+    .shop-detail-right-sec h1{
+        font-size: 32px;
+    }
+
+    .mian-thumbnail-box{
+        height: 370px;
+    }
+
+    .shop-detail-left-sec a.shop-back-btn{
+        top: 15px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px){
+    .shop-detail-left-sec .thumbnails {
+        width: 210%;
+    }
+    
+}
+
+@media (min-width:481px) and (max-width:667px){
+    .shop-detail-left-sec .thumbnails {
+        width: 165%;
+    }
+}
+div#nav-profile h2 {
+    display: none;
+}h2.woocommerce-Reviews-title {
+    display: none;
+}
+
+.woocommerce .quantity .qty {
+    max-width: 100% !important;
+    width: 50% !important;
+    height: 40px;
+    border-radius: 120px;
+    border: 1px solid #80755C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #80755C;
+    cursor: pointer;
+}
+button.single_add_to_cart_button.button.alt:hover {
+    border: 1px solid #047422 !important;
+    background: transparent !important;
+    color: #047422 !important;
+}
+button.single_add_to_cart_button.button.alt {
+    border-radius: 10px !important;
+    background: #047422 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #FFF !important;
+    font-family: "Red Hat Text" !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 25px !important;
+    gap: 14px !important;
+    text-transform: uppercase !important;
+    margin-top: 52px !important;
+    transition: all 0.5s ease !important;
+}
+a.reset_variations {
+    background-color: #047422 !important;
+    font-family: "Red Hat Text" !important;
+    color: #fff !important;
+    border-radius: 0px !important;
+    width: 80px !important;
+    height: 35px !important;
+    margin-top: 20px;
+}
+
+table.variations tbody, td, tfoot, th, thead, tr {
+    padding-top: 10px ! IMPORTANT;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-disabled {
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+}
+.woocommerce-variation-add-to-cart.variations_button.woocommerce-variation-add-to-cart-enabled {
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    margin-top: 20px;
+}
+button.single_add_to_cart_button.button.alt:before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f291';
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: 900;
+}
+
+
+
+.shop-detail-right-sec ins {
+    text-decoration: none !important;
+}
+nav.woocommerce-breadcrumb {
+    display: none;
+}
+label.qtybox {
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+}
+
+.category-box {
+    width: 100%;
+    border-radius: 40px 0 40px 0 !important;
+    overflow: hidden;
+}
+.category-box .category-img {
+    max-width: 280px;
+    width: 100%;
+    height: 246px;
+    margin: auto;
+    padding: 11px 0 24px 0;
+}
+.category-box .category-img img.card-img-top {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 0 0 0;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+.category-box h5 {
+    color: #2A312D;
+    font-family: "Playfair Display";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    margin-bottom: 19px;
+}
+.category-box p {
+    color: #970349;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.96px;
+    margin-bottom: 29px !important;
+}
+.woocommerce-variation-price {
+    color: #970349;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.96px;
+    margin-top: 29px !important;
+}
+.align-items-center {
+  
+    padding-top: 40px;
+}
+p.comment-form-author #author {
+    margin: 0 0 10px 10px;
+     border-radius: 20px;
+    border: 1px solid green;
+    padding: 0 0 0 15px;
+}
+
+p.comment-form-email #email {
+    margin: 0 0 10px 10px;
+    border-radius: 20px;
+    border: 1px solid green;
+    padding: 0 0 0 15px;
+}
+.woocommerce #review_form #respond textarea {
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 5px 5px 5px 15px;
+    margin-top: 10px;
+}
+div#nav-product-specifications ul li {
+    width: 100%;
+    padding: 8px;
+    border-top: 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, .1);
+    margin: 0;
+    line-height: 1.5;
+}
+.discount-badge {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    color: white;
+    border-radius: 50%;
+    padding: 13px 6px;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+@media screen and (min-width: 769px) and (max-width: 2500px) { 
+.discount-badge {
+    left: -140px;
+    top: -26px;
+}
+}
+
+p.maison-demarle-source {
+    margin-top: 15px;
+}

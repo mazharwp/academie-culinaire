@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Sarabun", sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.trophies-sec.page-banner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.60) 0.75%, rgba(0, 0, 0, 0.00) 111.99%), url('../images/banner.png');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+.page-border {
+    position: relative;
+    padding-top: 8rem;
+}
+
+.page-border::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 242, 232, 0.60);
+    top: 184px;
+    left: 0;
+    width: 520px;
+    animation: page_border_anim 3s linear forwards;
+}
+
+.page-banner-title h2 {
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+
+.fw-300 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.our-partner-text-sec .desc p {
+    color: #131D3A;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 275;
+    letter-spacing: 1.12px;
+    line-height: 52px;
+    margin-bottom: 0;
+}
+
+.our-partner-text-sec .desc{
+    max-width: 782px;
+    width: 100%;
+    margin: auto;
+    padding: 71px 0px 94px 0px;
+}
+
+.our-partner-tab-sec{
+    width: 100%;
+    background-color: #FBF9F4;
+}
+
+
+.our-partner-tab-sec .nav-link {
+    margin-bottom: 0 !important;
+    border-radius: 141px !important;
+    border: 1.5px solid #2A312D !important;
+    background: #FFF;
+    min-width: 304px;
+    /* min-height: 70px; */
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #2A312D;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.our-partner-tab-sec .nav {
+    border-bottom: 0 !important;
+    justify-content: center !important;
+    margin-bottom: 52px !important;
+    gap: 31px;
+}
+
+.nav-pills .nav-link:hover {
+    color: #2A312D !important;
+}
+
+.our-partner-tab-sec .nav-pills .nav-link.active {
+    border: 1.5px solid #047422 !important;
+    color: #2A312D !important;
+    background-color: #047422 !important;
+}
+
+.our-partner-tab-sec .nav-pills .nav-link.active {
+    color: #fff !important;
+}
+ 
+.our-partner-tab-sec .nav-pills .nav-link.active::after,
+.nav-pills .nav-link.active::before {
+    content: "";
+    background: #047422;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 50%;
+    bottom: -7px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    border-bottom: 1.5px solid #047422;
+    border-right: 1.5px solid #047422;
+    border-radius: 6px 0px 0px 0px;
+}
+.our-partner-tab-sec .nav-pills .nav-link.active::before {
+    content: "";
+    background: #047422;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 50%;
+    bottom: -7px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    border-bottom: 1.5px solid #047422;
+    border-right: 1.5px solid #047422;
+    border-radius: 6px 0px 0px 0px;
+}
+
+.our-partner-tab-sec .nav-pills .nav-link{
+    background-color: #fff;
+}
+
+.our-partner-tab-sec #pills-tab{
+    background: url(../img/background.png);
+    width: 100%;
+    height: 115px;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.our-partner-tab-box{
+    width: 100%;
+    min-height: 280px;
+    max-width:1310px;
+    border-radius: 0px 0px 0px 0px;
+    border: 1px solid #EAE2C2;
+    background: #FFF;
+    padding: 20px;
+    margin: 19px 0;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.our-partner-tab-box:first-child{
+    margin-top: 0;
+}
+
+.our-partner-tab-content .row.donate-box-margin:last-child{
+    margin-bottom: 175px;
+}
+
+.our-partner-tab-content .our-loadmore-btn #loadMoreBtn{
+    padding: 0px 50px;
+}
+
+
+
+
+.our-partner-tab-box-img{
+    position: relative;
+    max-width: 500px;
+}
+
+.our-partner-tab-box-img .videoPlayer{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.our-partner-tab-box-img .videoPlayer::poster{
+    min-height: 280px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.our-partner-tab-box-img  img{
+    border: 1px solid #FBF9F4;
+}
+
+.our-partner-tab-box-img .play-btn{
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    background: url(../images/Video_duotone.png);
+    background-repeat: no-repeat;
+    height: 100px;
+    transform: translate(-64%, -50%);
+}
+
+.our-partner-tab-box-img .play-btn img{
+    border: none !important;
+}
+
+@keyframes playIconAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.play-btn img {
+    animation: playIconAnimation 1.5s linear infinite; /* Apply the animation to the play icon */
+}
+
+.our-partner-tab-box-text{
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+    margin-left: 69px;
+}
+
+.our-partner-tab-box-text-left span{
+    color: #131D3A;
+    font-family: "Playfair Display";
+    padding-left: 27px;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 142.857% */
+    letter-spacing: 0.84px;
+}
+
+.our-partner-tab-box-text-left img{
+    width: 130px;
+    height: auto;
+}
+
+
+.our-partner-tab-box-text-right{
+    display: flex;
+}
+
+
+.our-partner-tab-box-text-right .find-out-more-btn{
+    border-radius: 10px;
+    margin-top: 0;
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    height: 0 !important;
+}
+
+.our-partner-tab-box-text-right .find-out-more-btn .btnDefault, .our-partner-tab-box-text-right .our-contact-btn .btnDefault{
+    margin-top: 0 !important;
+    
+}
+
+.our-partner-tab-box-text-right .our-contact-btn .btnDefault:hover{
+    color: #80755C;
+}
+
+.our-partner-tab-box-text-right .find-out-more-btn .btnDefault:hover{
+    color: #047422;
+}
+
+.our-partner-tab-box-text-right .custom-btn-2 button{
+    background: none !important;
+    border-radius: 10px;
+    border: 2px solid #80755C;
+    color: #80755C;
+    font-family: "Red Hat Text";
+    font-size: 18px;
+    padding: 20px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+    padding: 0px 35px !important;
+    min-height: 45px !important;
+}
+
+.our-partner-tab-box-text-right .custom-btn-2.our-contact-btn button{
+    border-radius: 10px;
+    border: 2px solid #047422;
+    color: #047422;
+    padding: 11px 32px;
+    font-family: "Red Hat Text";
+    margin-left: 18px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; 
+}
+
+.our-partner-tab-box-text-right .our-contact-btn{
+  
+}
+
+.our-tab-heading h2{
+    color: #2A312D;
+    font-family: "Playfair Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px; /* 187.5% */
+    letter-spacing: 0.32px;
+    margin-bottom: 32px;
+}
+
+.our-partner-tab-content{
+    max-width: 1366px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.our-partner-tab-sec .nav-pills .nav-link{
+    margin-right: 0 !important;
+}
+
+.our-partner-tab-box:hover{
+    border-radius: 0px 0px 60px 0px !important;
+}
+
+.donateBox-here .btnDefault::after{
+    background: #02651C !important;
+}
+
+.donateBox-here .custom-btn-2 button:hover{
+    color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1015px){
+.our-partner-tab-sec #pills-tab {
+    overflow-x:auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start !important;
+    padding-left: 32px;
+    }
+.our-partner-text-sec .desc{
+    padding: 32px
+}
+
+.our-partner-tab-box-text{
+    margin: 20px 0;
+}
+
+.our-partner-tab-box-text-right .custom-btn-2 button{
+    padding: 0px 20px !important;
+    height: 45px !important;
+}
+
+.our-partner-tab-box-text-left img{
+    width: 100px;
+}
+
+.our-partner-tab-box-text{
+    gap: 25px;
+}
+
+.our-partner-tab-content {
+max-width: 850px;
+}
+
+
+.our-partner-tab-box{
+    min-height: 240px;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.our-tab-heading h2{
+    margin-bottom: 25px;
+}
+
+.our-partner-tab-sec .nav{
+    margin-bottom: 15px !important;
+}
+
+.our-partner-tab-sec .nav-link{
+    border-radius: 20px !important;
+}
+
+.our-partner-text-sec .desc p{
+    font-size: 21px;
+    line-height: 33px;
+}
+.our-partner-text-sec .desc{
+    padding: 20px 32px;
+}
+
+/* .page-banner .page-banner-heading h2{
+    text-align: left;
+    padding-left: 60px;
+   } */
+
+}
+
+
+
+.page-banner .page-banner-heading{
+    max-width: 541px;
+    width: 100%;
+    text-align: right;
+    position: relative;
+   
+}
+
+.page-border::after{
+    display: none;
+}
+
+.page-banner .page-banner-heading h2{
+    margin-bottom: 13px !important;
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px; /* 100% */
+
+}
+
+/* .page-banner .page-banner-heading::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    min-width: 541px !important;
+    width: 100%;
+    animation: border_anim 3s linear forwards;
+} */
+
+
+
+
+/* news===content=======div==styaling==== */
+
+.new-content-heading{
+    max-width: 305px;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    margin-top: 40px;
+   
+}
+
+.news-content .new-content-heading h2{
+    margin-bottom: 10px !important;
+}
+
+.news.custom-border-btm::after{
+    display: none;
+}
+
+.new-content-heading::after{
+    content: "";
+    position: absolute;
+    border: 1px solid #F57812;
+    left: 0;
+    max-width: 305px;
+    width: 100%;
+    animation: border_anim 3s linear forwards;
+    margin-bottom: 64px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width:1367px) and (max-width:1920px){
+    .page-border::after{
+        width: 520px;
+    }
+} */
+
+@media (max-width:1366px){
+    .page-border::after{
+        width: 346px !important;
+    }
+
+    .our-partner-tab-sec .tab-content{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-partner-tab-box{
+        overflow-y: auto;
+        white-space: nowrap;
+        width: 100%;
+        border-radius: 0 !important;
+    }
+
+   .our-partner-tab-box-text-right{
+    margin-right: 20px;
+   } 
+
+   .our-partner-text-sec .desc p{
+    line-height: 45px;
+    text-align: center;
+   }
+
+   .section-gap.news-content-box{
+    padding: 0px 0px 40px 0px;
+   }
+
+  .donate-sec-container .donate-content.mobile-view{
+    padding: 0px 0px 35px 0px;
+   }
+
+   .new-content-heading{
+    margin-top: 0px;
+   }
+
+   .our-partner-tab-box-text-left .logo-75{
+        width: 100px;
+   }
+
+   .our-partner-tab-box-text-left span{
+    padding-left: 15px  ;
+   }
+
+   .our-partner-tab-sec #pills-tab{
+    height: 85px;
+    padding: 10px 10px;
+   }
+
+   .our-partner-tab-sec .nav-link{
+    min-width: 220px;
+   }
+
+   /* .page-banner .page-banner-heading h2{
+    text-align: left;
+    padding-left: 60px;
+   } */
+   
+}
+
+@media (max-width:849){
+    .our-partner-tab-box-text-right .custom-btn-2 button{
+        padding: 0px 15px !important;
+    }
+}
+
+
+@media (max-width:1024px){
+    .page-border::after{
+        display: none !important;
+    }
+
+    .new-content-heading::after{
+        display: none;
+    }
+
+    .page-banner .page-banner-heading::after{
+        display: none;
+    }
+
+    .new-content-heading, .page-banner .page-banner-heading{
+        max-width: 100%;
+        text-align: center;
+    }
+
+  
+}
+
+
+@media (max-width:1060px){
+    .our-partner-tab-box{
+        overflow-y: auto;
+        white-space: nowrap;
+        width: 100%;
+        border-radius: 0 !important;
+    }
+}
+
+/*  New css form */
+
+#forminator-module-1931 .forminator-field, #forminator-module-1870 .forminator-field {
+    margin: 7px !important;
+}
+#forminator-module-1931 .forminator-input, #forminator-module-1870 .forminator-input{
+    padding: 17px !important;
+    border-radius: 7px !important;
+    background-color: #fff !important;
+}
+#forminator-module-1931  button.forminator-button.forminator-button-submit.btn.btn-primary.mt-3, #forminator-module-1870 button.forminator-button.forminator-button-submit.btn.btn-primary.mt-3{
+    border-radius: 7px !important;
+    background: #80755C !important;
+    width: 100%;
+    padding: 15px;
+    color: #FFF ! IMPORTANT;
+    border: none;
+    font-family: var(--font-redhat) !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+}
+
+#forminator-module-1931  button.forminator-button.forminator-button-submit, #forminator-module-1870 button.forminator-button.forminator-button-submit{
+    border-radius: 7px !important;
+    background: #80755C !important;
+    width: 100% !important;
+    padding: 15px !important;
+    color: #FFF ! IMPORTANT;
+    font-family: var(--font-redhat) !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 25px !important;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    top: 10px;
+}
+
+ .forminator-ui#forminator-module-1931.forminator-design--default .forminator-description a, 
+ .forminator-ui#forminator-module-1931.forminator-design--default .forminator-description a{
+    color:#777771 !important;
+    font-family: var(--font-sarabun) !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 1.05px;
+    text-decoration-line: underline !important;
+    padding: 10px 0 10px 10px !important;
+    display: flow;
+}
+
+
+
+
+/* End new css */
